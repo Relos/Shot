@@ -27,7 +27,7 @@ public class ShotIt : MonoBehaviour {
             Vector3 forward = transform.TransformDirection(Vector3.forward);
             //zidan.rigidbody;
             Rigidbody rb = zidan.GetComponent<Rigidbody>();
-            rb.AddForce(forward * 2800);
+            rb.AddForce(forward * 3500);
 
             zidancount++;
             GameObject.Find("Canvas/zidancount").GetComponent<UnityEngine.UI.Text>().text = "子弹数：" + zidancount +"   消灭数："+destoryobjectcount;

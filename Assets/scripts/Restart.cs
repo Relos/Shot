@@ -6,8 +6,7 @@ public class Restart : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -16,33 +15,26 @@ public class Restart : MonoBehaviour {
     public AudioSource music;
     void OnGUI()
     {
-        if (GUILayout.Button("退出"))
-        //if (GUILayout.Button(new Rect(0, 0, 60, 30), "退出"))
-            {
-            //Application.Quit();
-            print("退出");
-        }
-        if (GUILayout.Button("重新开始"))
-        //if (GUILayout.Button(new Rect(0, 100, 60, 30), "重新开始"))
+        if (GUI.Button(new Rect(0, 10, 60, 30), "退出"))
         {
-            Application.LoadLevel("01");
+            Application.Quit();
         }
-        if(GUILayout.Button("Play"))
-        //if(GUILayout.Button(new Rect(10, 160, 100, 50), "Play"))
+        if (GUI.Button(new Rect(100, 10, 60, 30), "重新开始"))
+        {
+            Application.LoadLevel("Shot");
+        }
+        if(GUI.Button(new Rect(10, 50, 60, 30), "Play"))
         {
             music.Play();            
         }
-        if (GUILayout.Button("Pause"))
-        //if (GUILayout.Button(new Rect(10, 160, 100, 50), "Pause"))
+        if (GUI.Button(new Rect(10, 100, 60, 30), "Pause"))
         {
             music.Pause();
         }
-        if (GUILayout.Button("Stop"))
-        //if (GUILayout.Button(new Rect(10, 160, 100, 50), "Stop"))
+        if (GUI.Button(new Rect(10, 150, 60, 30), "Stop"))
         {
             music.Stop();
         }
         print("ongui");
-        music.Play();
     }
 }
