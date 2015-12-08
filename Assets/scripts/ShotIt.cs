@@ -11,7 +11,7 @@ public class ShotIt : MonoBehaviour {
 
     public int destoryobjectcount = 0;
 
-    public float speed = 5;
+    public float speed = 10;
     // Update is called once per frame
     public Transform original;
     void Update () {
@@ -42,19 +42,19 @@ public class ShotIt : MonoBehaviour {
         {
             transform.Rotate(0, 25 * Time.deltaTime, 0, Space.Self);
         }
-        if (Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.J))
         {
             transform.Rotate(0, 0, 25 * Time.deltaTime, Space.Self);
         }
-        if (Input.GetKey(KeyCode.X))
+        if (Input.GetKey(KeyCode.L))
         {
             transform.Rotate(0, 0, -25 * Time.deltaTime, Space.Self);
         }
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.I))
         {
             transform.Rotate(25 * Time.deltaTime, 0, 0, Space.Self);
         }
-        if (Input.GetKey(KeyCode.G))
+        if (Input.GetKey(KeyCode.K))
         {
             transform.Rotate(-25 * Time.deltaTime, 0, 0, Space.Self);
         }
