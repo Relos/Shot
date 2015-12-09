@@ -3,7 +3,7 @@
 
 课程来自：
 [http://www.51zxw.net/list.aspx?cid=454](http://www.51zxw.net/list.aspx?cid=454)
-由于课程中的代码是用js写的，且基于unity4.x，我就基于C#重写了一下。
+由于课程中的代码是用js写的，且基于unity4.x，不想用js，所以就基于C#重写了一下。
 
 如有错误，请指出，我会及时修改，谢谢。
 
