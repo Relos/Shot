@@ -7,7 +7,7 @@
 
 如有错误，请指出，我会及时修改，谢谢。
 
-这套代码进度到 [1-29](http://www.51zxw.net/show.aspx?id=33240&cid=454)
+这套代码进度从[1-1](http://www.51zxw.net/show.aspx?id=33127&cid=454)到 [1-29](http://www.51zxw.net/show.aspx?id=33240&cid=454)
 
 另外说一下学习过程中遇到的问题：
 * 1、首先是JS和C#代码的差异，及C#代码在Unity4.x和5.x上的区别，这些只能去网上搜索或者看文档
