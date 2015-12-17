@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class ShotIt : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+    UnityEngine.UI.Text zidancounttext;
+    // Use this for initialization
+    void Start () {
+        zidancounttext = GameObject.Find("Canvas/zidancount").GetComponent<UnityEngine.UI.Text>();
+    }
+   
     public int zidancount = 0;
 
     public int destoryobjectcount = 0;
@@ -18,7 +19,6 @@ public class ShotIt : MonoBehaviour {
         float x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         float z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
         transform.Translate(x, 0, z);
-       
 
         if(Input.GetButtonDown("Fire1"))
         {
@@ -30,7 +30,7 @@ public class ShotIt : MonoBehaviour {
             rb.AddForce(forward * 3500);
 
             zidancount++;
-            GameObject.Find("Canvas/zidancount").GetComponent<UnityEngine.UI.Text>().text = "子弹数：" + zidancount +"   消灭数："+destoryobjectcount;
+            zidancounttext.text = "子弹数：" + zidancount +"   消灭数："+destoryobjectcount;
         }
 
         //镜头旋转
