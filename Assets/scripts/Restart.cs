@@ -21,8 +21,8 @@ public class Restart : MonoBehaviour {
         }
         if (GUI.Button(new Rect(100, 10, 60, 30), "重新开始"))
         {
-            // 推荐使用 SceneManager.LoadScene ???但是还不知道怎么用
-            Application.LoadLevel("Shot");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Shot");
+            //Application.LoadLevel("Shot");
         }
         if(GUI.Button(new Rect(10, 50, 60, 30), "Play"))
         {
