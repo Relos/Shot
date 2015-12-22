@@ -2,12 +2,9 @@
 这套代码基于Unity5.2.0f3,C#
 
 课程来自：
-[http://www.51zxw.net/list.aspx?cid=454](http://www.51zxw.net/list.aspx?cid=454)
-由于课程中的代码是用js写的，且基于unity4.x，不想用js，所以就基于C#重写了一下。
+[这里](http://www.51zxw.net/study.asp?vip=11885058)
 
 如有错误，请指出，我会及时修改，谢谢。
-
-这套代码进度从[1-1](http://www.51zxw.net/show.aspx?id=33127&cid=454)到 [1-29](http://www.51zxw.net/show.aspx?id=33240&cid=454)
 
 另外说一下学习过程中遇到的问题：
 * 1、首先是JS和C#代码的差异，及C#代码在Unity4.x和5.x上的区别，这些只能去网上搜索或者看文档
